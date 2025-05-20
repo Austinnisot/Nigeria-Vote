@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voting Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Voting Website</h1>
+  <div class="candidates">
+    <?php foreach ($candidates as $candidate): ?>
+      <div class="candidate">
+        <h2><?php echo $candidate['name']; ?></h2>
+        <p><?php echo $candidate['description']; ?></p>
+        <button class="vote-btn" data-candidate-id="<?php echo $candidate['id']; ?>">Vote</button>
+      </div>
+    <?php endforeach; ?>
+  </div>
+
+  <div class="vote-form">
+    <h2>Cast Your Vote</h2>
+    <form id="vote-form">
+      <input type="hidden" id="candidate-id" name="candidate_id">
+      <label for="voter-name">Your Name:</label>
+      <input type="text" id="voter-name" name="voter_name">
+      <button type="submit">Submit Vote</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

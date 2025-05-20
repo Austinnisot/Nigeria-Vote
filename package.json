@@ -1,0 +1,23 @@
+{
+  "name": "nigeriavotes",
+  "version": "1.0.1",
+  "description": "Prototype for nigeria voting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Austinnisot/Vote.git"
+  },
+  "keywords": [
+    "oneman",
+    "onevote"
+  ],
+  "author": "Oluwasona Tosin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Austinnisot/Vote/issues"
+  },
+  "homepage": "https://github.com/Austinnisot/Vote#readme"
+}
